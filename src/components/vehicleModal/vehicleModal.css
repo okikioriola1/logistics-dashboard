@@ -1,0 +1,231 @@
+.vehicle-modal-main-container{
+    align-items: center;
+    background: #36363680;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.vehicle-modal-inner-container{
+  border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(82 82 82 / 50%);
+    margin: auto;
+    max-width: 900px;
+    min-height: 50px;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.top-vehicle-modal{
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    padding: 2rem 0 3rem 0;
+
+}
+.top-vehicle-modal-text{
+    width: 93%;
+    text-align: center;
+
+}
+.close-modal-icon{
+    width:7%;
+    height:40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.close-modal-icon button{
+    background: #fff;
+    outline:none;
+    border:1px solid ;
+    border-radius: 4px;
+    width:20px;
+    height:20px;
+    cursor: pointer;
+}
+.close-modal-icon svg{
+    font-size: 20px;
+    
+
+}
+
+.top-vehicle-modal h1{
+     font-family: var(--font-family);
+    font-size: 22px;
+
+}
+.top-vehicle-modal p{
+    font-family:var(--font-family);
+    font-size:14px;
+    
+}
+
+.bottom-vehicle-modal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 3rem;
+
+}
+
+.bottom-modal-icon-container{
+    display: flex;
+    flex-direction:row ;
+    width: 31%;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-modal-text-container{
+    width: 23%;
+    
+}
+
+.bottom-modal-text h1{
+    font-size: 16px;
+    font-family:var(--font-family);
+    font-weight: 500;
+}
+
+.bottom-modal-text p{
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+.bottom-modal-icon svg{
+    transform: scale(-1,1);
+    font-size: 35px;
+   
+
+}
+.bottom-modal-text {
+    display: flex;
+    padding-left: 0.4rem;
+    
+    flex-direction: column;
+    text-align: left;
+    
+}
+.bottom-modal-text-container{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    
+}
+.middle-modal-img-container{
+    display: flex;
+    align-items: center;
+    width:36%;
+    justify-content: center;
+}
+.middle-modal-img-container-text{
+    padding-left:0.6rem;
+}
+.middle-modal-img-container-text h1{
+    
+    font-size: 16px;
+    font-family:var(--font-family);
+    font-weight: 500;
+}
+.middle-modal-img-container-text p{
+    
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+
+}
+.middle-modal-img-container img{
+    width: 45px;
+    height: 45px;
+    border-radius: 2rem;
+    
+}
+.middle-vehicle-modal{
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.circle-3{
+    align-items: center;
+    background: #386ce21f;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    height: 114px;
+    width:114px;
+}
+
+.circle-2{
+    background: #386CE21F;
+    width:185px;
+    height:185px;
+    border-radius: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-1{
+    background: #386CE21F;
+    width: 243px;
+    height:243px;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-3 svg{
+    font-size: 35px;
+}
+
+
+@media (max-width: 800px){
+    .vehicle-modal-inner-container{
+        
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgb(82 82 82 / 50%);
+        margin: auto;
+        max-width:90%;
+        min-height: 50px;
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    .middle-vehicle-modal{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .middle-modal-img-container-text h1{
+        font-size: 10px;
+    }
+    .middle-modal-img-container-text p{
+        font-size: 9px; 
+    }
+
+    .bottom-modal-text h1{
+         font-size: 10px;
+    }
+    
+    .bottom-modal-text p{
+      font-size: 8px;
+    }
+    .bottom-modal-icon{
+        display: none;
+    }
+    .top-vehicle-modal h1{
+     font-size: 14px;
+     }
+    .top-vehicle-modal p{
+    font-size:10px;
+    }
+    .middle-modal-img-container{
+        margin-top: 2rem;
+    }
+}

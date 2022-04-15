@@ -1,0 +1,39 @@
+.profile-img{
+    border-radius: 2rem;
+}
+
+.header-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.img-container{
+    padding:0 1rem 0 1rem;
+}
+.short-vertical-bar{
+    border-left: 1px solid rgb(221, 233, 243) ;
+    height: 45px;
+    width: 2px;
+}
+.notif-icon{
+    background-color:#70707034;
+    border:none ;
+    border-radius: 50%;
+    padding:0.8rem;
+
+}
+.notif-icon svg{
+    font-size: 23px;
+}
+
+@media (max-width:550px){
+    .notif-icon{
+        padding:0.2rem
+    }
+
+    .profile-img{
+        width:35px;
+        height:35px;
+    }
+}

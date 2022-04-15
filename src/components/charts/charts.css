@@ -1,0 +1,29 @@
+.header-1 p,
+.header-2 p{
+      font-size: 13px;
+    font-family: var(--font-family);
+}
+
+.header-1 h1,
+.header-2 h1{
+    color:#001737;
+    font-size:21px;
+    font-family: var(--font-family);
+}
+
+.chart-container{
+    width:95%;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+    padding-bottom: 2rem;
+}
+
+.chart-text-header{
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+    margin-bottom: 30px;
+    
+}

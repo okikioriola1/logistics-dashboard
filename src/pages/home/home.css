@@ -1,0 +1,118 @@
+.logistics-home-container{
+padding: 2rem 4rem;
+}
+
+.home-text{
+    padding-bottom: 1rem;
+}
+.home-text h1{
+    font-family:var(--font-family);
+    font-size: 30px;
+    
+}
+
+.home-text p{
+    font-family: var(--font-family);
+    font-size: 14px;
+    padding-top: 0.5rem;
+}
+
+.home-cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.shipment-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.shipment-header{
+    width:50%;
+    
+}
+.shipment-header h1{
+    font-family:var(--font-family);
+    font-size: 30px;
+    
+}
+.shipment-header p{
+    font-family: var(--font-family);
+    font-size: 14px;
+     padding-top: 0.5rem;
+
+}
+.shipment-right{
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+
+.shipment-btns{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    height:49px;
+    border-radius:40px ;
+}
+
+.shipment-btns button{
+    height: 45px;
+    width:45px;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out 0.8s;
+}
+
+.charts-section{
+    display: flex;
+    height:400px;
+    width:100%;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+
+}
+
+.clickable:hover{
+    background-color: #386CE2;
+    color: #fff;
+}
+
+@media(max-width: 550px){
+    .home-cards-container{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .shipment-container{
+        flex-direction: column;
+    }
+    .shipment-right{
+        width:100%;
+    }
+    .shipment-btns{
+        width:100%;
+    }
+    .shipment-header{
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .shipment-header h1{
+       font-size: 20px;
+      
+    }
+    .shipment-header p{
+        font-size: 10px;
+
+    
+    }
+    .home-text h1{
+        font-size: 18px;
+    }
+    .home-text p{
+        font-size: 9px;
+    }
+}

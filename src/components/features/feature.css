@@ -1,0 +1,121 @@
+
+.feature-card-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    justify-content: space-between;
+    width: 30%;
+    transition: ease-in 0.5ms;
+
+}
+
+.feature-card-text{
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+
+}
+
+.feature-card-text h5{
+    font-family: var(--font-family);
+    color: #C3CDD6;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.feature-card-text h1{
+    font-family: var(--font-family);
+    font-weight:700;
+    font-size: 23px;
+    padding-bottom: 1rem;
+}
+
+.feature-card-text p{
+    font-family: var(--font-family);
+    color: #C3CDD6;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+
+}
+.blue-feature{
+    background-color: #386CE2;
+    height:90px;
+    width:90px;
+}
+.green-feature{
+    background-color: #0FC4AF;
+    height:90px;
+    width:90px;
+    
+}
+.pink-feature{
+    background-color: #DE387E;
+    height:90px;
+    width:90px;
+    
+}
+.blue-hover{
+    transition: ease-in-out 0.8s;
+}
+.green-hover{
+    transition: ease-in-out 0.8s;
+}
+.pink-hover{
+    transition: ease-in-out 0.8s;
+}
+.blue-hover:hover{
+    background-color: #386CE2;
+    height: 200px; 
+    transform: translateY(+5px);
+    
+ 
+}
+.blue-hover:hover h5,
+.blue-hover:hover h1,
+.blue-hover:hover p,
+.green-hover:hover h5,
+.green-hover:hover h1,
+.green-hover:hover p,
+.pink-hover:hover h5,
+.pink-hover:hover h1,
+.pink-hover:hover p
+{
+    color:#fff;
+}
+
+.green-hover:hover{
+    background-color: #0FC4AF;
+    height: 200px;
+    transform: translateY(+5px);    
+
+}
+.pink-hover:hover{
+    background-color: #DE387E;
+    height: 200px;
+    transform: translateY(+5px);    
+
+}
+.feature-card-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 0 0 1rem;
+    width:30%;
+}
+.feature-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 100px;
+}
+.feature-img-container svg{
+    color: #fff;
+    font-size:29px;
+}
+
+@media(max-width: 550px){
+    .feature-card-container{
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
