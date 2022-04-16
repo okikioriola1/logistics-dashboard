@@ -7,7 +7,7 @@ import {BsMoon} from 'react-icons/bs'
 import styled from "styled-components"
 const Sun = styled.div`
 position: absolute;
-top: 2.7rem;
+top: 2.3rem;
 right: 0.5rem;
 transition: all 1s linear;
 z-index: 100;
@@ -16,7 +16,7 @@ cursor: pointer;
 
   const Moon = styled.div`
 position: absolute;
-top: 2.7rem;
+top: 2.3rem;
 right: 0.5rem;
 transition: all 1s linear;
 z-index: 100;
