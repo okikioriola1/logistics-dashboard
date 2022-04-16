@@ -7,6 +7,7 @@ const Feature = ({title, number, joined, color, icon, hover}) => {
         
             <motion.div className={`${hover} feature-card-container`}
             initial ={{x:1000}}
+            whileHover={{scale:1.1}}
             animate={{x:0, transition:{type:"spring", duration:3}}}>
                 <div className="feature-card-text">
                 <h5>{title}</h5>

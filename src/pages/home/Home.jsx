@@ -26,7 +26,6 @@ const Home = () => {
 
           <div className="home-text">
             <motion.h1
-              whileHover={{ scale: 1.1 }}
               initial={{ y: -200 }}
               transition={{ type: "spring", duration: 0.5 }}
               animate={{ y: 0 }}
@@ -34,7 +33,6 @@ const Home = () => {
               Good evening, <strong>Kikitech</strong>
             </motion.h1>
             <motion.p
-              whileHover={{ scale: 1.1 }}
               initial={{ y: -200 }}
               transition={{ type: "spring", duration: 0.5 }}
               animate={{ y: 0 }}
@@ -72,7 +70,6 @@ const Home = () => {
             <div className="shipment-container">
               <div className="shipment-header">
                 <motion.h1
-                  whileHover={{ scale: 1.1 }}
                   initial={{ y: 10 }}
                   transition={{ type: "spring", duration: 0.5 }}
                   animate={{ y: 0 }}
@@ -80,7 +77,6 @@ const Home = () => {
                   Shipments
                 </motion.h1>
                 <motion.p
-                  whileHover={{ scale: 1.1 }}
                   initial={{ y: 10 }}
                   transition={{ type: "spring", duration: 0.5 }}
                   animate={{ y: 0 }}

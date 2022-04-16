@@ -9,7 +9,7 @@ import {MdSupport} from 'react-icons/md'
 import {BsCreditCardFill} from 'react-icons/bs'
 import {MdSettings} from 'react-icons/md'
 import {FaReceipt} from 'react-icons/fa'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 import './sidebar.css'
 
@@ -17,29 +17,33 @@ const Sidebar = ({hide}) => {
     return (
         <div className="sidebar">
             <div className="sidebar-container">
-                <h1>IPl.</h1>
+                <h1>IPl<span className="blue-dot">.</span></h1>
                 <h4> Main Menu</h4>
                 <div className ="sidebar-links">
-                    <div className="sidebar-links-container">
-                        <Link to="/" onClick ={hide} className="sidebar-link-container">
+                   
+                        <NavLink exact to="/" onClick ={hide} className="sidebar-link-container" activeClassName="selected" activeStyle={{color: "green"}}>
+                        <div className="sidebar-links-container">
                         <HiHome className="sidebar-link-icon" size={34}/><p>Home</p>
-                        </Link>
+                        
                     </div>
+                    </NavLink>
 
-                    <div className="sidebar-links-container">
-                        <Link to="/vehicles" onClick={hide} className="sidebar-link-container two">
+                    
+                        <NavLink exact to="/vehicles" onClick={hide} className="sidebar-link-container two" activeClassName="selected" activeStyle={{color: "green"}}>
+                        <div className="sidebar-links-container">
                         <RiTruckFill className="sidebar-link-icon" style={{transform:"scale(-1,1)"}} size={34}/>
                         <p>Vehicles</p>
-                        </Link>
-                    </div>
+                        </div>
+                        </NavLink>
+                    
 
-                    <div className="sidebar-links-container">
+                    
 
                     <div className="sidebar-link-container">
                         <MdPeopleAlt className="sidebar-link-icon" size={34}/>
                         <p>Transporters</p>
                     </div>
-                    </div>
+                    
                     <div className="sidebar-link-container">
                         <IoMdPerson className="sidebar-link-icon" size={34}/>
                         <p>Customers</p>

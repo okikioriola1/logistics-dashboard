@@ -40,7 +40,7 @@ function App() {
       </div>
       <div className="right-side">
         <Route exact path ="/" ><Home/></Route>
-        <Route path ="/vehicles" ><Vehicles/></Route>
+        <Route exact path ="/vehicles" ><Vehicles/></Route>
 
         
 

@@ -65,7 +65,7 @@
 }
 .blue-hover:hover{
     background-color: #386CE2;
-    height: 200px; 
+     
     transform: translateY(+5px);
     
  
@@ -85,14 +85,14 @@
 
 .green-hover:hover{
     background-color: #0FC4AF;
-    height: 200px;
-    transform: translateY(+5px);    
+    
+       
 
 }
 .pink-hover:hover{
     background-color: #DE387E;
-    height: 200px;
-    transform: translateY(+5px);    
+    
+   
 
 }
 .feature-card-img{

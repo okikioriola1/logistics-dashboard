@@ -83,6 +83,9 @@ padding: 2rem 4rem;
 }
 
 @media(max-width: 550px){
+    .logistics-home-container{
+        padding: 2rem 2rem;
+    }
     .home-cards-container{
         flex-direction: column;
         padding-top: 0;

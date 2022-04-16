@@ -24,11 +24,11 @@ const Vehicles = () => {
         <div className="logistics-vehicles-section">
             <Header/>
             <div className="vehicle-text">
-                    <motion.h1 whileHover={{ scale: 1.1 }}
+                    <motion.h1 
               initial={{ y: -200 }}
               transition={{ type: "spring", duration: 0.5 }}
               animate={{ y: 0 }}>Vehicles</motion.h1>
-                    <motion.p whileHover={{ scale: 1.1 }}
+            <motion.p 
               initial={{ y: -200 }}
               transition={{ type: "spring", duration: 0.5 }}
               animate={{ y: 0 }}>Manage and track all vehicles on the IPI Network</motion.p>
