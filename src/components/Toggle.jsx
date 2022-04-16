@@ -16,8 +16,8 @@ cursor: pointer;
 
   const Moon = styled.div`
 position: absolute;
-top: 2.4rem;
-right: 1.3rem;
+top: 2.7rem;
+right: 0.5rem;
 transition: all 1s linear;
 z-index: 100;
 cursor: pointer;
