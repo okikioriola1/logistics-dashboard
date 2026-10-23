@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Kiki Logistics Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React frontend concept for a logistics operations workspace, with summary charts, vehicle status cards, and a vehicle tracking modal.
 
-## Available Scripts
+[View the hosted demo](https://logistics-dashboard-black.vercel.app)
 
-In the project directory, you can run:
+![Kiki Logistics dashboard preview](docs/screenshots/dashboard.png)
 
-### `npm start`
+*Project preview from the portfolio's existing image assets.*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Dashboard overview with example charts and summary metrics.
+- Vehicle page with sample transit, cancelled, and completed statuses.
+- Vehicle tracking modal with driver, vehicle, and route details.
+- Light and dark themes, with the choice saved in local storage.
+- Collapsible mobile navigation.
 
-### `npm test`
+Vehicle data and charts are examples; there is no live tracking service. The search field and category labels do not filter the sample vehicles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Stack
 
-### `npm run build`
+React 17, Create React App, React Router 5, Chart.js, styled-components, and Framer Motion.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/okikioriola1/logistics-dashboard.git
+cd logistics-dashboard
+npm ci
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open the local URL printed by Create React App, usually `http://localhost:3000`. The overview is at `/` and the vehicle screen is at `/vehicles`. No backend or environment variables are required.
 
-### `npm run eject`
+This is an older Create React App project. It does not pin a Node.js version; compatibility with current Node/npm releases needs verification before modernizing the toolchain.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Command | Purpose |
+| --- | --- |
+| `npm start` | Development server |
+| `npm run build` | Production bundle in `build/` |
+| `npm test` | Inherited test runner; no test files are currently included |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Code map
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `src/pages/home/`: dashboard composition.
+- `src/pages/vehicles/`: vehicle screen.
+- `src/components/charts/`: example charts.
+- `src/components/vehicleCard/` and `vehicleModal/`: vehicle presentation and tracking dialog.
+- `src/components/styles/`: themes and persistence.
 
-## Learn More
+## Next improvements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Connect vehicles and metrics to an API, implement search and category filtering, add keyboard-accessible modal behavior and interaction tests, and update the build tooling with clean-install CI checks.
